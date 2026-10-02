@@ -1,33 +1,28 @@
 body{
     background-color: cadetblue;
+    font:600;
 }
 
 
 .container{
     
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 80px auto 100px;
     grid-template-areas: 
     
     "header header header"
-    "nav"
-    "main main"
+    "nav nav nav"
+    "main main main"
     "footer footer footer";
 }
 
-.content{
+
+.main{
+    grid-area: main;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+   
 }
 
-.contentgrupp{
-    display:grid;
-}
-
-.picg{
-width: 100px;
-lenght: 100px;
-}
 
 .header{
     grid-area: header;
@@ -36,6 +31,7 @@ lenght: 100px;
     margin: 30px
 
 }
+
 
 .footer{
     grid-area: footer;
@@ -57,15 +53,50 @@ margin: 30px;
 }
 
 
+article{
+    padding: 7px;
 }
 
 
-main{
-     grid-area: main;
-     
-     flytta upp texten bredvid bilden
-     
-}
    
    
 
+
+
+.om-bandet{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: main;
+    
+}
+
+.om-bandetbild{
+width: 360px;
+    
+}
+
+
+
+.grupp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: main;
+        
+}
+
+.gruppbild{
+    size: 500px;
+    
+        
+}
+
+.picg{
+width: 100px;
+}
+
+
+
+.songs{
+    display: grid;
+}
