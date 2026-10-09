@@ -46,10 +46,28 @@ body{
 .nav{
 grid-area: nav;
 background-color: green;
-text-align: center;
 display: grid;
 grid-template-columns: 1fr 1fr;
 margin: 30px;
+height: 3em;
+place-items: center;
+}
+
+
+nav ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+
+nav a{
+color:aliceblue;
+font-size: 1.5em;
+}
+
+nav a:hover{
+    color:darkmagenta;
 }
 
 
@@ -99,4 +117,85 @@ width: 100px;
 
 .songs{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: main;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+   
+}
+table{
+    width: 500px;
+    justify-self: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+.Titel{
+font-size: 2em;
+color: black;
+margin: 30px;
+text-align: center;
+    
+}
+
+table td{
+    color: rgb(167, 163, 163);
+    font-size: 1.5em;
+    padding: 10px;
+
+}
+
+table th{
+    background-color: rgb(255, 105, 5);
+    color: rgb(255, 246, 246);
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+td:nth-child(3){
+    width: 200px;
+    text-align: right;
+}
+
+td:nth-child(2){
+    width: 200px;
+    text-align: center;
+}
+
+td:nth-child(1){
+    width: 200px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(20, 61, 16);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(142, 99, 49);
+}
+
+.album{
+text-align: center;
+font-size: 2em;
+color: black;
+margin: 30px;
+
+}
+
+.hotel{
+    width: 200px;
+    height: 200px;
+}
+
+.speak{
+    width: 200px;
+    height: 200px;
+}
+
+.albumdiv{
+    padding: 30px
 }
