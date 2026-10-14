@@ -104,7 +104,8 @@ width: 360px;
 }
 
 .gruppbild{
-    size: 500px;
+    width: 500px;
+    height: 300px;
     
         
 }
@@ -136,7 +137,6 @@ table{
 .Titel{
 font-size: 2em;
 color: black;
-margin: 30px;
 text-align: center;
     
 }
@@ -179,10 +179,10 @@ tr:nth-child(odd) {
 }
 
 .album{
-text-align: center;
 font-size: 2em;
 color: black;
-margin: 30px;
+text-align: center;
+
 
 }
 
@@ -197,5 +197,11 @@ margin: 30px;
 }
 
 .albumdiv{
-    padding: 30px
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.albumul{
+    list-style: none;
 }
