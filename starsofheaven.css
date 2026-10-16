@@ -28,8 +28,9 @@ body{
     grid-area: header;
     text-align: center;
     background-color: bisque;
-    margin: 30px
-
+    margin: 30px;
+    border: 8px solid black;
+    border-radius: 20px;
 }
 
 
@@ -40,6 +41,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     margin: 30px;
+    border: 8px solid black;
+    border-radius: 20px;
 }
 
 
@@ -51,6 +54,7 @@ grid-template-columns: 1fr 1fr;
 margin: 30px;
 height: 3em;
 place-items: center;
+border-radius: 50px;
 }
 
 
@@ -197,7 +201,7 @@ text-align: center;
 }
 
 .albumdiv{
-    padding-left: 30px;
+    padding-left: 30px; 
     padding-right: 30px;
     padding-bottom: 30px;
 }
